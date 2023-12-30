@@ -1,38 +1,64 @@
-<!--Jason McNeice 29th December 2023 first MTML doc since 2001-->
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
 <head>
-  <title>Learn HTML</title>
-    <style>
-      .myDiv {
-        border: 5px outset rgb(20, 5, 50);
-        background-color: lightblue;
-        text-align: center;
-      }
-      </style>
-    <style>
-      .imgDiv {
-        border: 15px outset rgb(20, 5, 50);
-        background-color: grey;
-        text-align: center;
-      }
-      </style>      
-  <script></script>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external stylesheet -->
+    <!-- This is a relative link that refers to the file in the same folder as index.html-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Page title -->
+    <title>Address to Map</title>
 </head>
 <body>
-  <div class="myDiv">
-  <h1>Address to Map</h1>
-  <div><p>Enter an address to see a map of the location, it should work like this site <a href="https://maps.google.com"> try it</a>></p>
-    <form id="form" onsubmit="return false;">
-      <input   style=position; type="text" id="userInput">
-      <input   style=position:; type="submit"    onclick="submitForm()">
-    </form>
-    function submitForm() {
-      var input = document.getElementById("userInput").value;
-      alert(input);
-    }
-  <div class="imgDiv"><img src="https://media.maptiler.com/old/img/maps/satellite/tasked.webp" alt="Check this location out." width ="500"></div>
-  </div>
-  </div>
+    <!-- Header section with site title -->
+    <header>
+        <h1>Address to Map</h1>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <!-- Navigation links -->
+            <!--
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>-->
+        </ul>
+    </nav>
+
+    <!-- Main content section -->
+    <section class="content">
+        <!-- Main heading -->
+        <h2>Show a map for the address entered</h2>
+        <!-- Content paragraph -->
+        <p>Enter an address and click submit to show a picture centred on the address from the Mapbox API.</p>
+        <!--Create a form foir user entry-->
+        <div class='wrapper'>
+          <form id='mapAddress'>
+          <div class='form-uname'>
+              <label id='myAddress' for='myAddressField'>Enter your Address:</label>
+              <input id='myAddressField' type='text' maxlength='50'></input>
+          </div>
+          <div class='form-sub'>
+              <button id='subButton' type='button'>Get a Map!</button>
+          </div>
+          </form>
+          
+          <div>
+              <p id='result'></p></div>
+          </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <div class="highlight">
+        <p>&copy; This is the first html I have written since 2001!</p>
+        </div>
+    </footer>
 </body>
 </html>

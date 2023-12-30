@@ -1,0 +1,75 @@
+body {
+    /* Set the default font family and remove margin and padding from the body */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Styling for the header section */
+    background-color: #333;
+    color: rgba(0, 4, 0, 0.826);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    /* Styling for the navigation menu */
+    background-color: #666;
+    padding: 0.5rem;
+}
+
+nav ul {
+    /* Remove list styling from the navigation menu */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    /* Display navigation links inline with margin */
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    /* Styling for navigation links */
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.content {
+    /* Set maximum width, margin, and padding for the content section */
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.wrapper {
+    /* Set maximum width, margin, and padding for the content section */
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.highlight {
+    /* Set maximum width, margin, and padding for the content section */
+    max-width: 1200px;
+    margin: auto;
+    padding: 5px;
+    background-color: #333;
+    transition: background-color 2s ease-out;
+  }
+  .highlight:hover {
+    color: yellow;
+
+}
+footer {
+    /* Styling for the footer section */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
