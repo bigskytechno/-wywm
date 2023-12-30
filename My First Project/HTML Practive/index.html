@@ -3,27 +3,36 @@
 <html lang ="en">
 <head>
   <title>Learn HTML</title>
-  <style>
-      p {
-        color: white;
-        background-color: rgb(183, 183, 206);
-        padding: 5px;
-        border: 1px solid black;
-      }
-    </style>
     <style>
-      p {
-        color: blue;
-        background-color: rgb(146, 151, 179);
+      .myDiv {
+        border: 5px outset rgb(20, 5, 50);
+        background-color: lightblue;
+        text-align: center;
       }
-    </style>
+      </style>
+    <style>
+      .imgDiv {
+        border: 15px outset rgb(20, 5, 50);
+        background-color: grey;
+        text-align: center;
+      }
+      </style>      
   <script></script>
 </head>
 <body>
+  <div class="myDiv">
   <h1>Address to Map</h1>
-
-  <p>Enter an address to see a map of the location, it should work like this site <a href="https://maps.google.com"> try it</a>></p>
-  <img src="https://media.maptiler.com/old/img/maps/satellite/tasked.webp" alt="Check this location out." width ="500">
-
+  <div><p>Enter an address to see a map of the location, it should work like this site <a href="https://maps.google.com"> try it</a>></p>
+    <form id="form" onsubmit="return false;">
+      <input   style=position; type="text" id="userInput">
+      <input   style=position:; type="submit"    onclick="submitForm()">
+    </form>
+    function submitForm() {
+      var input = document.getElementById("userInput").value;
+      alert(input);
+    }
+  <div class="imgDiv"><img src="https://media.maptiler.com/old/img/maps/satellite/tasked.webp" alt="Check this location out." width ="500"></div>
+  </div>
+  </div>
 </body>
 </html>
